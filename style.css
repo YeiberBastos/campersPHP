@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(img/espacio2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+.contenido{
+    color: white;
+    background-image: url(img/espacio.jpg);
+}
