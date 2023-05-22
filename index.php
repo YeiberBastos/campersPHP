@@ -1,4 +1,57 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Candidatos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Candidatos</h1>
+    
+    <form method="post" action="procesar_formulario.php">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="telefono">Teléfono de Contacto:</label>
+        <input type="tel" name="telefono" id="telefono" required>
+        
+        <label for="nivel_estudio">Nivel de Estudio:</label>
+        <select name="nivel_estudio" id="nivel_estudio">
+            <option value="Bachiller">Bachiller</option>
+            <option value="Técnico">Técnico</option>
+            <option value="Tecnólogo">Tecnólogo</option>
+            <option value="Profesional">Profesional</option>
+            <option value="Estudiante">Estudiante Universitario</option>
+        </select>
+        
+        <label for="conocimientos">Conocimientos Previos en Programación:</label>
+        <select name="conocimientos[]" id="conocimientos" multiple required>
+            <option value="Python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Node.js">Node.js</option>
+        </select>
+        
+        <label for="nivel_ingles">Nivel de Inglés:</label>
+        <select name="nivel_ingles" id="nivel_ingles">
+            <option value="Basico">Básico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+        </select>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -115,4 +168,4 @@
   </div>
 </body>
 
-</html>
+</html> -->
